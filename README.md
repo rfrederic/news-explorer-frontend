@@ -1,8 +1,22 @@
-# React + Vite
+# News Explorer Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **React + Vite** web application that allows users to search, read, and save news articles.  
+This repository contains the **frontend** of the News Explorer project, designed as part of the **TripleTen Software Engineering Bootcamp**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+
+---
+
+## Technologies Used
+
+- **React 18**
+- **Vite**
+- **React Router DOM**
+- **Axios**
+- **CSS (BEM methodology)**
+- **GitHub Pages** for deployment
+- Optional: **Tailwind CSS** for styling
+
+---
