@@ -40,7 +40,6 @@
   height: 40px;
   border: none;
   border-radius: 8px;
-  /* background-image: url("../../assets/bookmark-normal.svg"); */
   background: #fff url("../../assets/bookmark-normal.svg") center/18px no-repeat;
   cursor: pointer;
   transition: background 0.3s ease, background-color 0.3s ease;

@@ -28,7 +28,6 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Responsive tweaks */
 @media screen and (max-width: 768px) {
   .app {
     background-color: #fff;

@@ -32,12 +32,10 @@ function NewsCard({ article, isLoggedIn, onSave, onUnsave, isSaved }) {
 
   return (
     <article className="card">
-      {/* ---------- KEYWORD TAG (ONLY SAVED PAGE) ---------- */}
       {isSavedPage && (
         <span className="card__keyword">{article.keyword || "General"}</span>
       )}
 
-      {/* ---------- IMAGE + BUTTONS ---------- */}
       <div className="card__image-container">
         <a
           href={article.url}
@@ -52,8 +50,6 @@ function NewsCard({ article, isLoggedIn, onSave, onUnsave, isSaved }) {
           />
         </a>
 
-        {/* BOOKMARK (default view) */}
-        {/* {!isSavedPage && ( */}
         <button
           className={`card__bookmark ${isSaved ? "card__bookmark_active" : ""}`}
           onClick={handleBookmarkClick}
@@ -62,9 +58,7 @@ function NewsCard({ article, isLoggedIn, onSave, onUnsave, isSaved }) {
             <span className="card__tooltip">Sign in to save articles</span>
           )}
         </button>
-        {/* )} */}
 
-        {/* DELETE BUTTON (only in saved page) */}
         {isSavedPage && (
           <button
             className="card__delete-button"
@@ -74,7 +68,6 @@ function NewsCard({ article, isLoggedIn, onSave, onUnsave, isSaved }) {
         )}
       </div>
 
-      {/* ---------- CONTENT ---------- */}
       <div className="card__content">
         <p className="card__date">
           {new Date(article.publishedAt).toLocaleDateString("en-US", {
