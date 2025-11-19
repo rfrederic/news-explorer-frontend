@@ -1,0 +1,177 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card__image-container {
+  position: relative;
+  width: 100%;
+}
+
+.card__image {
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  /* background-image: url("../../assets/bookmark-normal.svg"); */
+  background: #fff url("../../assets/bookmark-normal.svg") center/18px no-repeat;
+  cursor: pointer;
+  transition: background 0.3s ease, background-color 0.3s ease;
+}
+
+.card__bookmark:hover {
+  background: url("../../assets/bookmark-hover.svg") center/18px no-repeat;
+}
+
+.card__bookmark_active {
+  background: url("../../assets/bookmark-marked.svg") center/18px no-repeat;
+}
+
+.card__tooltip {
+  position: absolute;
+  top: -35px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #fff;
+  color: #1a1b22;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  padding: 8px 12px;
+  border-radius: 10px;
+  white-space: nowrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card__bookmark:hover .card__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/deleteicon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card__delete-button:hover {
+  opacity: 0.7;
+}
+
+.card__content {
+  padding: 16px 24px 24px;
+}
+
+.card__date {
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+  color: #b6bcbf;
+  margin-bottom: 12px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #1a1b22;
+  margin-bottom: 12px;
+}
+
+.card__description {
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  color: #1a1b22;
+  margin-bottom: auto;
+}
+
+.card__source {
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.card__keyword {
+  position: absolute;
+  font-family: "Roboto Slab", serif;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a1b22;
+}
+
+/* ---------- Mobile ---------- */
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 16px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card__image {
+    height: 220px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+
+  .card__source {
+    font-size: 12px;
+  }
+}

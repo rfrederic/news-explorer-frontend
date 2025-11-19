@@ -1,4 +1,4 @@
-import "./About.ccs";
+import "./About.css";
 import authorPicture from "../../assets/author-picture.jpeg";
 
 function About() {
@@ -12,9 +12,9 @@ function About() {
       <div className="about__content">
         <h1 className="about__title">About the Author</h1>
         <p className="about__text">
-          Hi! I'm <strong>Rigaud Jr. Frederic </strong> a Fullstack Developer
-          and Software Engineering student at <strong>TripleTen</strong>. I
-          create responsive web applications using
+          Hi! I'm Rigaud Jr. Frederic a Fullstack Developer and Software
+          Engineering student at <strong>TripleTen</strong>. I create responsive
+          web applications using
           <strong> React</strong>, <strong>JavaScript</strong>,
           <strong> HTML5</strong>, and <strong>CSS3</strong>.
         </p>

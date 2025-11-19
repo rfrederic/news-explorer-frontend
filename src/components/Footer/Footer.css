@@ -12,6 +12,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: #b6bcbf;
+  font-family: "Roboto Slab", serif;
 }
 
 .footer__nav {
@@ -30,6 +31,7 @@
   color: #1a1b22;
   font-size: 16px;
   transition: opacity 0.3s ease;
+  font-family: "Roboto Slab", serif;
 }
 
 .footer__link:hover {
@@ -57,7 +59,7 @@
   background-image: url("../../assets/LinkedIn.svg");
 }
 
-/* --------  Responsive -------- */
+/* --------Responsive-------- */
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;

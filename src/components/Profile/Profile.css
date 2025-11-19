@@ -1,0 +1,41 @@
+.profile {
+  padding: 60px 80px;
+  background-color: #fff;
+}
+
+.profile__header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__name {
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+
+.profile__email {
+  color: #555;
+}
+
+.profile__button {
+  background-color: #2f71e5;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.profile__button:hover {
+  background-color: #1a4fb9;
+}
