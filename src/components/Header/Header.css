@@ -1,5 +1,5 @@
 .header {
-  background: url("../../assets/hompag.jpg") center/cover no-repeat;
+  background: url("../../assets/homepage.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   min-height: 100vh;
@@ -94,7 +94,8 @@
 }
 
 .header__input:focus {
-  outline: none;
+  outline: 2px solid #2f71e5;
+  outline-offset: 2px;
 }
 
 .header__button {
@@ -172,6 +173,7 @@
 
 @media screen and (max-width: 550px) {
   .header {
+    min-height: auto;
     padding: 40px 20px 80px;
   }
   .header__menu-btn {
@@ -179,7 +181,7 @@
     z-index: 999;
   }
   .header__top {
-    padding: 12px;
+    padding: 12px 16px;
     flex-direction: row;
     align-items: center;
     border: none;

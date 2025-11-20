@@ -146,7 +146,7 @@
 }
 
 /* ---------- Mobile ---------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
   .cards {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -172,5 +172,23 @@
 
   .card__source {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    padding: 0 5px;
+  }
+
+  .news-card__title {
+    font-size: 14px;
+  }
+
+  .news-card__description {
+    font-size: 12px;
+  }
+
+  .header__title {
+    font-size: 24px;
   }
 }

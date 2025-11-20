@@ -1,6 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .results {
   padding: 60px 0;
   text-align: center;
+  width: 100%;
 }
 
 .results__title {
@@ -28,10 +36,4 @@
 
 .results__button:hover {
   background-color: #e8e8e8;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

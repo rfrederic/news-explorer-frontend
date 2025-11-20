@@ -6,3 +6,16 @@
   max-width: 1200px;
   justify-items: center;
 }
+
+@media screen and (max-width: 550px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    padding: 0 5px;
+  }
+}
