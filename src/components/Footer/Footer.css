@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  background-color: #ffffff;
+  color: #1a1b22;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b6bcbf;
+  font-family: "Roboto Slab", serif;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #1a1b22;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  font-family: "Roboto Slab", serif;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__icon_type_github {
+  background-image: url("../../assets/github.png");
+}
+
+.footer__icon_type_linkedin {
+  background-image: url("../../assets/LinkedIn.svg");
+}
+
+/* --------Responsive-------- */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 20px;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+}

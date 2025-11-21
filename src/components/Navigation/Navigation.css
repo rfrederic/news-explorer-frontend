@@ -1,0 +1,196 @@
+/* === Base Styles === */
+.nav-header {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 40px;
+  gap: 30px;
+}
+.nav__button {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  justify-content: center;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  height: 24px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  border-bottom: 2px solid #000;
+}
+
+.nav__signin-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+.nav__user-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #000;
+  background: transparent;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav__logout-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* === Menu Button === */
+.nav__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+.nav__button {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 4px 8px;
+  width: 120px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  background-color: transparent;
+}
+
+.nav__menu-icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* === Overlay === */
+.nav__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 500;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* === Mobile (≤480px) === */
+@media screen and (max-width: 550px) {
+  .nav {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    align-items: start;
+    background-color: #000;
+    z-index: 998;
+    padding: 30px;
+  }
+
+  .nav__menu-btn {
+    display: block;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 160px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    transition: all 0.4s ease;
+    align-items: start;
+  }
+
+  .nav__links--open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav__signin-btn,
+  .nav__user-btn {
+    width: 70%;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .nav__button {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav__actions {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .nav__logout-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* === Tiny screens (≤450px) === */
+@media screen and (max-width: 450px) {
+  .nav__menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav__signin-btn,
+  .nav__user-btn {
+    padding: 6px 16px;
+  }
+}

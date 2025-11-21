@@ -1,0 +1,23 @@
+.signin__text {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin-top: 16px;
+  font-family: "Roboto Slab", serif;
+}
+
+.signin__link {
+  background: none;
+  border: none;
+  color: #2f71e5;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signin__link:hover {
+  color: #347eff;
+}
