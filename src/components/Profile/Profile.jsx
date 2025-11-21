@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import "./Profile.css";
 
-export default function Profile({ savedCount = 0, onEditProfile, onSignOut }) {
+export default function Profile() {
   const { currentUser } = useContext(CurrentUserContext);
-
-  const initials = currentUser?.name?.trim()?.charAt(0)?.toUpperCase?.() || "U";
 
   return (
     <section className="profile">

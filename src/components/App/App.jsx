@@ -14,7 +14,6 @@ import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import * as auth from "../../utils/auth";
 import { getArticles } from "../../utils/api";
-import Profile from "../Profile/Profile";
 
 function App() {
   // ---------------- STATE ----------------
@@ -23,7 +22,6 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [savedArticles, setSavedArticles] = useState([]);
 
   // ---------- SAVE ARTICLE ----------

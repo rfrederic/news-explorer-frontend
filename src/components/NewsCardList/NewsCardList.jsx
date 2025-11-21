@@ -11,7 +11,7 @@ function NewsCardList({
 }) {
   return (
     <div className="cards">
-      {articles.map((article, index) => {
+      {articles.map((article) => {
         const isSaved = savedArticles?.some((a) => a.url === article.url);
 
         return (
